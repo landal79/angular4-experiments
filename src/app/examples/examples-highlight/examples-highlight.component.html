@@ -1,0 +1,32 @@
+<app-example-template [title]="title">
+  <md-grid-list cols="4" rowHeight="100px">
+    <md-grid-tile [colspan]="4">
+      <h4>Pick a highlight color</h4>
+    </md-grid-tile>
+    <md-grid-tile>
+      <md-radio-group class="example-radio-group"
+                      [(ngModel)]="color">
+        <md-radio-button class="example-radio-button"
+                         *ngFor="let color of colors"
+                         [value]="color">
+          {{color}}
+        </md-radio-button>
+      </md-radio-group>
+    </md-grid-tile>
+  </md-grid-list>
+
+  <p [appHighlight]="color">Highlight me!</p>
+
+  <p [appHighlight]="color" defaultColor="violet">
+    Highlight me too!
+  </p>
+
+  <hr>
+  <p><i>Mouse over the following lines to see fixed highlights</i></p>
+
+  <p [appHighlight]="'yellow'">Highlighted in yellow</p>
+  <p appHighlight="orange">Highlighted in orange</p>
+</app-example-template>
+
+
+

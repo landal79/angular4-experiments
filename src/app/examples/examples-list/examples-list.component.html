@@ -1,0 +1,6 @@
+<md-nav-list>
+  <md-list-item *ngFor="let example of examples; let i=index">
+    <md-icon md-list-icon>{{example.icon}}</md-icon>&nbsp;
+    <a [routerLink]="example.routerLink" routerLinkActive="active">{{example.title | capitalize}}</a>
+  </md-list-item>
+</md-nav-list>
