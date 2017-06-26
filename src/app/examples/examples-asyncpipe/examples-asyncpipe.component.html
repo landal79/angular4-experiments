@@ -1,0 +1,5 @@
+<app-example-template>
+  <h1>Counting Down From {{ countDown }}!</h1>
+  <h2 *ngIf="!countCompleted">{{ count$ | async }}</h2>
+  <h2 *ngIf="countCompleted">{{ message }}</h2>
+</app-example-template>

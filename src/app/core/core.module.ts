@@ -1,22 +1,26 @@
-import {NgModule} from "@angular/core";
-import {CommonModule} from "@angular/common";
-import {BoldHoverDirective} from "./bold-hover.directive";
-import { HighlightDirective } from './highlight.directive';
-import { CapitalizePipe } from './capitalize.pipe';
+import {NgModule, Optional, SkipSelf} from "@angular/core";
+import {MaterialModule} from "@angular/material";
+import {throwIfAlreadyLoaded} from "./module-import-guard";
+import {SideMenuComponent} from './side-menu/side-menu.component';
+import {SharedModule} from "../shared/shared.module";
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    MaterialModule,
+    SharedModule
   ],
   declarations: [
-    BoldHoverDirective,
-    HighlightDirective,
-    CapitalizePipe
+    SideMenuComponent,
+    ToolbarComponent
   ],
   exports: [
-    BoldHoverDirective,
-    HighlightDirective,
-    CapitalizePipe
+    SideMenuComponent,
+    ToolbarComponent
   ]
 })
-export class CoreModule { }
+export class CoreModule {
+  constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
+    throwIfAlreadyLoaded(parentModule, 'CoreModule');
+  }
+}

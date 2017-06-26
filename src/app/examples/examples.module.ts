@@ -9,20 +9,21 @@ import { ExamplesListComponent } from './examples-list/examples-list.component';
 import { BoldHoverExampleComponent } from "./bold-hover-example/bold-hover-example.component";
 import { ExamplesHighlightComponent } from './examples-highlight/examples-highlight.component';
 import { ExampleTemplateComponent } from './example-template/example-template.component';
+import { ExamplesAsyncpipeComponent } from './examples-asyncpipe/examples-asyncpipe.component';
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
     MaterialModule,
-    CoreModule,
+    SharedModule,
     ExamplesRoutingModule
   ],
   declarations: [
     ExampleTemplateComponent,
     ExamplesListComponent,
     BoldHoverExampleComponent,
-    ExamplesHighlightComponent
+    ExamplesHighlightComponent,
+    ExamplesAsyncpipeComponent
   ]
 })
 export class ExamplesModule { }

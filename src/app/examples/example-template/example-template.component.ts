@@ -15,3 +15,9 @@ export class ExampleTemplateComponent implements OnInit {
   @Input() title: string;
 
 }
+
+export interface ExampleComponent {
+
+  readonly title : string;
+
+}

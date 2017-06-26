@@ -15,6 +15,7 @@ export class ExamplesListComponent implements OnInit {
   examples = [
     {icon: 'cloud',  title : 'bold hover directive', routerLink : '/examples/examples-bold-hover' },
     {icon: 'cloud_queue', title : 'highlight directive', routerLink : '/examples/examples-highlight' },
+    {icon: 'translate', title : 'async pipe', routerLink : '/examples/examples-asyncpipe' },
   ];
 
 }

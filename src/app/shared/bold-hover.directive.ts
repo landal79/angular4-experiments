@@ -1,7 +1,7 @@
 import {Directive, ElementRef, HostListener} from '@angular/core';
 
 @Directive({
-  selector: '[boldHover]'
+  selector: '[appBoldHover]'
 })
 export class BoldHoverDirective {
 

@@ -6,6 +6,7 @@ import { MaterialModule } from "@angular/material";
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from "./app-routing.module";
 import { ExamplesModule } from "./examples/examples.module";
+import {CoreModule} from "./core/core.module";
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ExamplesModule } from "./examples/examples.module";
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    CoreModule,
     ExamplesModule,
     AppRoutingModule
   ],
