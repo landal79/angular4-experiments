@@ -1,8 +1,8 @@
 <md-sidenav-container class="app-sidenav-container">
 
-  <app-side-menu></app-side-menu>
+  <app-side-menu #sidemenu></app-side-menu>
 
-  <app-toolbar [title]="title"></app-toolbar>
+  <app-toolbar [title]="title" (onButtonClick)="sidemenu.toggle()"></app-toolbar>
 
   <div class="app-content">
 
