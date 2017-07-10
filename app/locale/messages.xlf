@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="core.home" datatype="html">
+        <source><x id="INTERPOLATION"/></source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">F:/git/angular-sample/src/app/core/side-menu/side-menu.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5ce5d91f4237b3e14b2e8a67bbc8450a9ac627a2" datatype="html">
+        <source>Examples</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">F:/git/angular-sample/src/app/core/side-menu/side-menu.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="core.menu" datatype="html">
+        <source>menu</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">F:/git/angular-sample/src/app/core/toolbar/toolbar.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
