@@ -11,10 +11,10 @@ import { ExamplesHighlightComponent } from './examples-highlight/examples-highli
 import { ExampleTemplateComponent } from './example-template/example-template.component';
 import { ExamplesAsyncpipeComponent } from './examples-asyncpipe/examples-asyncpipe.component';
 import {SharedModule} from "../shared/shared.module";
+import {AngularMaterialModule} from "../angular-material/angular-material.module";
 
 @NgModule({
   imports: [
-    MaterialModule,
     SharedModule,
     ExamplesRoutingModule
   ],

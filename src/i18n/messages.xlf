@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" target-language="it" datatype="plaintext" original="ng2.template">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="core.home" datatype="html">
         <source>Home</source>
-        <target>Home</target>
+        <target/>
         <context-group purpose="location">
           <context context-type="sourcefile">app\core\side-menu\side-menu.component.ts</context>
           <context context-type="linenumber">5</context>
@@ -12,7 +12,7 @@
       </trans-unit>
       <trans-unit id="core.examples" datatype="html">
         <source>Examples</source>
-        <target>Esempi</target>
+        <target/>
         <context-group purpose="location">
           <context context-type="sourcefile">app\core\side-menu\side-menu.component.ts</context>
           <context context-type="linenumber">10</context>
@@ -20,7 +20,7 @@
       </trans-unit>
       <trans-unit id="core.menu" datatype="html">
         <source>menu</source>
-        <target>menu</target>
+        <target/>
         <context-group purpose="location">
           <context context-type="sourcefile">app\core\toolbar\toolbar.component.ts</context>
           <context context-type="linenumber">3</context>

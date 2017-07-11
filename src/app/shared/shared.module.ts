@@ -4,11 +4,13 @@ import {FormsModule} from "@angular/forms";
 import {BoldHoverDirective} from "./bold-hover.directive";
 import {HighlightDirective} from "./highlight.directive";
 import {CapitalizePipe} from "./capitalize.pipe";
+import {AngularMaterialModule} from "../angular-material/angular-material.module";
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    AngularMaterialModule
   ],
   declarations: [
     BoldHoverDirective,
@@ -18,6 +20,7 @@ import {CapitalizePipe} from "./capitalize.pipe";
   exports: [
     CommonModule,
     FormsModule,
+    AngularMaterialModule,
     BoldHoverDirective,
     HighlightDirective,
     CapitalizePipe

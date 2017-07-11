@@ -9,5 +9,4 @@ if (environment.production) {
 }
 
 platformBrowserDynamic()
-  .bootstrapModule(AppModule)
-  .catch(err => console.error(err)); //https://github.com/angular/angular-cli/issues/4551
+  .bootstrapModule(AppModule);

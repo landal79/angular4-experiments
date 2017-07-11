@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from "./app-routing.module";
 import { ExamplesModule } from "./examples/examples.module";
 import {CoreModule} from "./core/core.module";
+import {AngularMaterialModule} from "./angular-material/angular-material.module";
 
 @NgModule({
   declarations: [
@@ -15,8 +16,8 @@ import {CoreModule} from "./core/core.module";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule,
     CoreModule,
+    AngularMaterialModule,
     ExamplesModule,
     AppRoutingModule
   ],

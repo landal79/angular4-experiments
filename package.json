@@ -1,16 +1,18 @@
 {
   "name": "angular-sample",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve ",
-    "start-it" : "ng serve --aot --i18n-file=src/i18n/messages.it.xmb --locale=it --i18n-format=xmb",
+    "start-it" : "ng serve --aot --verbose --locale it --i18n-format xlf --i18n-file src/i18n/messages.it.xlf",
     "build": "ng build",
+    "build-aot-it": "ng build --aot --verbose --locale it --i18n-format xmb --i18n-file src/i18n/messages.it.xmb",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "i18n": "ng xi18n -f xmb -l en -op src/i18n --progress --verbose"
+    "i18n": "ng xi18n -l en -op src/i18n --progress --verbose",
+    "i18n-xmb": "ng xi18n -f xmb -l en -op src/i18n --progress --verbose"
   },
   "private": true,
   "dependencies": {
