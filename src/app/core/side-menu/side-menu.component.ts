@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 import {MdSidenav} from "@angular/material";
 
 @Component({
@@ -8,21 +8,15 @@ import {MdSidenav} from "@angular/material";
 })
 export class SideMenuComponent implements OnInit {
 
-  @ViewChild(MdSidenav)
-  private _sidenav : MdSidenav;
+  @Output() onLinkClick = new EventEmitter<boolean>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  toggle() {
-    this._sidenav.toggle();
+  linkClick() {
+    this.onLinkClick.emit(true);
   }
 
-  set open (open : boolean) {
-    this._sidenav.toggle(open);
-  }
-
-  get open(): boolean { return this._sidenav._isOpened; }
 }

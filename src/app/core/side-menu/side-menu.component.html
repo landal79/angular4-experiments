@@ -1,15 +1,16 @@
-<md-sidenav class="app-sidenav" mode="over">
-  <md-toolbar>
+<md-toolbar>
+  <nav>
+    <a routerLink="home" routerLinkActive="active" class="app-side-link" (click)="linkClick()">
+      <md-icon>home</md-icon>
+      <span i18n="@@core.home">Home</span>
+    </a>
+  </nav>
+  <md-toolbar-row>
     <nav>
-      <a routerLink="home" routerLinkActive="active">
-        <md-icon i>home</md-icon><span i18n="@@core.home">Home</span>
+      <a routerLink="examples" routerLinkActive="active" (click)="linkClick()">
+        <md-icon>keyboard_arrow_right</md-icon>
+        <span i18n="@@core.examples">Examples</span>
       </a>
     </nav>
-    <md-toolbar-row>
-      <nav>
-        <md-icon i>keyboard_arrow_right</md-icon>
-        <a routerLink="examples" routerLinkActive="active" i18n="@@core.examples">Examples</a>
-      </nav>
-    </md-toolbar-row>
-  </md-toolbar>
-</md-sidenav>
+  </md-toolbar-row>
+</md-toolbar>

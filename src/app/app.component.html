@@ -1,13 +1,12 @@
 <md-sidenav-container class="app-sidenav-container">
-
-  <app-side-menu #sidemenu></app-side-menu>
+  <md-sidenav #sidemenu class="app-sidenav" mode="over">
+    <app-side-menu (onLinkClick)="sidemenu.toggle()"></app-side-menu>
+  </md-sidenav>
 
   <app-toolbar [title]="title" (onButtonClick)="sidemenu.toggle()"></app-toolbar>
 
   <div class="app-content">
-
     <router-outlet></router-outlet>
-
   </div>
 
 </md-sidenav-container>
