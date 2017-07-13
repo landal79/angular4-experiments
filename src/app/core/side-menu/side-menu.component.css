@@ -13,6 +13,11 @@ a:link, a:visited {
   width: 100%;
 }
 
-a:hover, a:active {
+a:active {
   background-color: lightblue;
+}
+
+a:hover {
+  background-color: navy;
+  color: white;
 }

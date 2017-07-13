@@ -2,7 +2,7 @@ import {NgModule, Optional, SkipSelf} from "@angular/core";
 import {throwIfAlreadyLoaded} from "./module-import-guard";
 import {SideMenuComponent} from './side-menu/side-menu.component';
 import {SharedModule} from "../shared/shared.module";
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import {ToolbarComponent} from './toolbar/toolbar.component';
 import {RouterModule} from "@angular/router";
 
 @NgModule({
