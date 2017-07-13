@@ -5,11 +5,15 @@ import {BoldHoverDirective} from "./bold-hover.directive";
 import {HighlightDirective} from "./highlight.directive";
 import {CapitalizePipe} from "./capitalize.pipe";
 import {AngularMaterialModule} from "../angular-material/angular-material.module";
+import {HttpModule, JsonpModule} from "@angular/http";
+import {WikipediaService} from "./wikipedia.service";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
+    HttpModule,
+    JsonpModule,
     AngularMaterialModule
   ],
   declarations: [
@@ -20,6 +24,8 @@ import {AngularMaterialModule} from "../angular-material/angular-material.module
   exports: [
     CommonModule,
     FormsModule,
+    HttpModule,
+    JsonpModule,
     AngularMaterialModule,
     BoldHoverDirective,
     HighlightDirective,
